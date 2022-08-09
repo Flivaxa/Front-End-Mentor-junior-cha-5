@@ -104,6 +104,9 @@ header .container .landing div:last-child form input[type="submit"] {
     border-radius: 5px;
     box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
 }
+header .container .landing div:last-child form input[type="submit"]:hover {
+    background-color: hsl(224, 93%, 65%);
+}
 @media (min-width: 992px) {
     header .container .landing {
         display: flex;
@@ -185,14 +188,29 @@ main > section:first-child .container .content .how {
     width: fit-content;
     margin: 40px auto;
 }
+main > section:first-child .container .content .how:hover {
+    border-color: hsl(170, 45%, 60%);
+}
 main > section:first-child .container .content .how a {
     text-decoration: none;
     color: var(--Accent-Moderate-Cyan);
     font-family: 'Open Sans', sans-serif;
     margin-right: 10px;
 }
+main > section:first-child .container .content .how:hover a {
+    color: hsl(170, 45%, 60%);
+}
 main > section:first-child .container .content .how img {
     width: 20px;
+}
+main > section:first-child .container .content .how img:last-child {
+    display: none;
+}
+main > section:first-child .container .content .how:hover img:first-of-type {
+    display: none;
+}
+main > section:first-child .container .content .how:hover img:last-of-type {
+    display: block;
 }
 main > section:first-child .container .content .quote {
     background-color: white;
@@ -287,6 +305,9 @@ main > section:last-child form input:last-child {
     font-weight: 700;
     border-radius: 2px;
 }
+main > section:last-child form input:last-child:hover {
+    background-color: hsl(224, 93%, 65%);
+}
 @media (min-width: 992px) {
     main > section:last-child .container {
         display: flex;
@@ -341,6 +362,9 @@ footer .container .foot ul li {
     margin-bottom: 15px;
     cursor: pointer;
 }
+footer .container .foot ul li:hover {
+    color: var(--Accent-Bright-Blue);
+}
 footer .container .foot .social {
     display: flex;
     justify-content: center;
@@ -356,6 +380,10 @@ footer .container .foot .social a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+footer .container .foot .social a:hover {
+    color: var(--Accent-Bright-Blue);
+    border-color: var(--Accent-Bright-Blue);
 }
 footer .container .foot .social a:nth-child(2) {
     margin: 0 10px;
